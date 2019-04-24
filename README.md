@@ -16,12 +16,9 @@ These are the course content that were used in a git workshop conducted by me.
 9. Resolving merge conflicts.
 10. Git Workflows Using github or bitbucket (Centralised Workflow, Forking Workflow, Feature Branching Workflow)
 
-
 ##### You can read it 
 
-[http://nepsdotin.github.io/git-tutorial/site/](http://nepsdotin.github.io/git-tutorial/site/)
-
-If you want you can use it with due credits to me by Placing my Name (Napoleon Arouldas @indianwebdevil) and my startup [grandappstudio.in](grandappstudio.in)
+If you want you can use it with due credits to me by Placing my Name (Napoleon Arouldas @indianwebdevil) and my startup [grandappstudio.com](grandappstudio.in)
 
 ### Requirements
 
