@@ -1,4 +1,4 @@
-# [Re]moving Files
+# Removing files from git
 
 ### $ git rm [options] <files>
 lets say you have deleted few files on your project. Now that should be deleted in your repo also.

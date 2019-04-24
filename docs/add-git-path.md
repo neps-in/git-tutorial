@@ -27,7 +27,14 @@ Open the Notepad (Start -> Run and enter notepad)
 
 ## How do I add my GIT directory to the PATH On Mac
 
-### Do the following
+### Do one of the following
+####  Adding path the PATH Variable
+
+```
+export PATH=$PATH:/absolute/path/of/git/installation
+```
+
+#### Adding path to paths file
 
 ```
 sudo vi /etc/paths

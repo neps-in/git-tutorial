@@ -20,13 +20,11 @@ and
 $ git init
 ```
 
-Note: General advice for PHP Developer keep your `/var/www/project-name` as your project folder. Don't keep in a seperate folder and try to move around the files.
-
 `git init` Creates an ** empty ** git repository or ** reinitialize ** an existing one.
 
 An initial HEAD file that references the HEAD of the master branch is also created.
-
-Running git init in an existing repository is safe. It will not overwrite things that are already there.
+>
+>Running git init in an existing repository is safe. It will not overwrite things that are already there.
 
 basically a .git directory with subdirectories for objects, refs/heads, refs/tags is created in the current folder.
 
@@ -71,6 +69,8 @@ git add -p
 
 `Best Practice: Its always good to review Changes before its commited.`
 
+>
+> `git add -p` options works only with the files are that are already added to the git index using git add command.
 
 Output will be something like this. This will vary from your computer output.
 ```
@@ -202,7 +202,7 @@ commit 3157ee3718e180a9476bf2e5cab8e3f1e78a73b7
 Author: John Smith
 ```
 
-# Take part in an Open Source Project
+# Joining the project of your team
 
 ## clone
 

@@ -28,13 +28,13 @@ $ git add .
 $ git commit 'Complete content added to readme.md'
 ```
 
-### Try This Exercise 1
+###  Exercise 1
 ```
 $ git checkout master
 Already on 'master'
 ```
 
-### Try This Exercise 2
+###  Exercise 2
 ```
 $ git log --oneline
 
@@ -46,7 +46,7 @@ $ git log --oneline
 $ git checkout 49de400
 ```
 
-### Try This Exercise 3
+###  Exercise 3
 
 ```
 $ git checkout master

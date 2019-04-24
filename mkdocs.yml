@@ -1,27 +1,37 @@
 site_name: Git Tutorial
 
-theme: readthedocs
+theme:
+   # name: readthedocs
+   name: 'material'
+   logo: 'img/Git-Icon-1788C.png'
+
+
+markdown_extensions:
+- footnotes
+- toc:
+        permalink: True
+        separator: "-"
 
 pages:
-- [index.md, Home]
-- [whoami.md, Who am i]
-- [motive.md, Motivation]
-- [history.md, History]
-- [distributed.md, Distributed Version Control]
-- [uniqueness.md, Uniqueness]
-- [install.md, Installation]
-- [add-git-path.md, Adding GIT DIRECTORY TO Windows PATH]
-- [gitgui.md, GUI Tools For GIT]
-- [initaddcommit.md, Getting Started]
-- [initaddcommit_ex_1.md, Exercise on Getting Started]
-- [statuslog.md, Status & Log]
-- [statuslog_ex_1.md, Exercise on Status & Log]
-- [checkoutrevertreset.md, Undoing Changes Safely!]
-- [checkoutrevertreset_ex_1.md, Exercise on Undoing Changes Safely!]
-- [branch.md, Branching Merging Handson]
-- [hosted-git.md, Hosted Git Tools]
-- [workflows.md, Git Workflows]
-- [featureflow.md, Feature Development]
-- [line-ending.md, Mysterious invisible Line Ending Characters]
-- [integrations-plugins.md, Integrations and Plugins]
-- [ref.md, References]
+- 'Home': index.md
+- 'Who am i': whoami.md
+- 'Motivation': motive.md
+- 'History': history.md
+- 'Distributed Version Control': distributed.md
+- 'Uniqueness': uniqueness.md
+- 'Installation': install.md
+- 'Adding GIT DIRECTORY TO Windows PATH': add-git-path.md
+- 'GUI Tools For GIT': gitgui.md
+- 'Getting Started': initaddcommit.md
+- 'Exercise on Getting Started': initaddcommit_ex_1.md
+- 'Status & Log': statuslog.md
+- 'Exercise on Status & Log': statuslog_ex_1.md
+- 'Undoing Changes Safely!': checkoutrevertreset.md
+- 'Exercise on Undoing Changes Safely!': checkoutrevertreset_ex_1.md
+- 'Branching Merging Handson': branch.md
+- 'Hosted Git Tools': hosted-git.md
+- 'Git Workflows': workflows.md
+- 'Feature Development': featureflow.md
+- 'Mysterious invisible Line Ending Characters': line-ending.md
+- 'Integrations and Plugins': integrations-plugins.md
+- 'References': ref.md

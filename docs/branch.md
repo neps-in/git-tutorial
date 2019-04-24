@@ -51,6 +51,7 @@ git checkout -b <new-branch>
 ```
 
 ## Detached HEADs demystified
+
 1.  HEAD is Git’s way of referring to the current snapshot.
 2.  Internally, the git checkout command simply updates the HEAD to point to either the specified branch or commit.
 3.  When it points to a branch, Git doesn't complain, but when you check out a commit, it switches into a “detached HEAD” state.
@@ -63,31 +64,28 @@ The point is, your development should always take place on a branch—never on a
 
 ![](img/nabranch.svg)
 
-### Create a Branch
-```
-git branch new-feature
-git checkout new-feature
-```
+### Solution to Detached head in git
 
-#### or 
+### Understanding
 
-```
-git checkout -b new-feature
-```
+You get out of the main stream, to expriment with one of your commit. Hence you did `git checkout commitid`. Now you are free to make some experiment. 
+Now your working tree is as exactly as it was in the commitid. 
 
-#### and
+#### Step 1:
 
-```
-# Edit some files
-git add <file>
-git commit -m "Started work on a new feature"
-# Repeat
-```
+Checkout to a new branch by `git checkout -b tempbranch`
 
-#### Switch the branch
-```
-git checkout master
-```
+#### Step 2:
+
+Do the commit if you want to keep the change using `git commit -m 'committing fixes' `. 
+
+#### Step 3:
+
+or drop the changes you added manually , by either giving `git reset --hard`. Just be cautious, If you are working with multiple files and if you have not commited. You will lose all your changes when giving `git reset --hard`.
+
+#### Step 4:
+
+Merge with master using `git merge master`.
 
 ## Merging
 

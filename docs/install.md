@@ -58,8 +58,9 @@ If you want a more up to date version, you can also install it via a binary inst
 
 https://kj-prince.com/blog/install-git-mac-osx-homebrew/
 
-## To Check Installation
+# To verify installation
 To check if you have installed git on your computer, try this.
+
 ```
 $ git --version
 git version 1.7.12.4
@@ -115,8 +116,29 @@ git config --global --edit
 ```
 git config --list
 ```
+# Handling CRLF 
+
+Operating systems handles line endings differently. Windows marks every line endings with CRLF. Whereas linux and mac marks every line endings with LF. 
+When you have the entire team working on a project uses consistently Linux or Windows there will be no problems. But generally, this will not be the case. Some of the team member will use Linux, few of them will be using Mac. So when the Mac user start using the code contributed by Windows developer, he will get lots of CRLF on the all the files everyline.
+
+## Setting that should be used for windows
+
+`git config core.autocrlf true`
+
+This does few things
+1. When you use this setting, evertime when you commit the code to git repo, it would change CRLF to LF.  
+2. When you checkout the code, it would convert the LF to CRLF so that its easy for windows users.
+3. When linux user uses the code it would be having only LF as line ending mark which is very legitimate.
+
+## Setting that should be used for linux & mac 
+
+`git config core.autocrlf input`
+
+1. This will commit the code as it is given as the input. Linux os provides LF as the line ending. So it will take as it is. 
+2. When you checkout the code from git, it will be emitted out as it is.
 
 ## Optional To Create SSH Keys
+
 [https://help.github.com/articles/generating-ssh-keys](https://help.github.com/articles/generating-ssh-keys)
 
 [https://help.github.com/ssh-issues/](https://help.github.com/ssh-issues/)
