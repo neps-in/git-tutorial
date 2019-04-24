@@ -2,7 +2,7 @@
 
 ## Bitkeeper By BitMover 
 
-The decision made in 2005 to use BitKeeper for Linux kernel development was a controversial one.
+The decision made in 2005 to use [Bitkeeper](https://www.bitkeeper.org/documentation.html) for Linux kernel development was a controversial one.
 
 ## Look out For New Tools 
 
@@ -18,11 +18,4 @@ The decision made in 2005 to use BitKeeper for Linux kernel development was a co
 
 5. Able to handle large projects like the Linux kernel efficiently (speed and data size)
 
-## Creator Of GIT
-
-### Linus Torvald
-
-## Git Maintainer
-
-###Junio Hamano
-
+6. Include very strong safeguards against corruption, either accidental or malicious.
